@@ -5,11 +5,11 @@
             "type": "cppdbg",
             "request": "launch",
             "name": "Debug",
-            "program": "${workspaceFolder}/out/build/default/hello-vcpkg",
+            "program": "${workspaceFolder}/out/build/default/app",
             "args": [],
             "cwd": "${workspaceFolder}",
             "externalConsole": false,
-            "miDebuggerPath": "/usr/bin/gdb",
+            "MIMode": "lldb",
             "preLaunchTask": "CMake: build"
         }
     ]
