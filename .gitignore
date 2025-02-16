@@ -1,4 +1,4 @@
-out
 .vscode/launch.json
 CMakePresets.json
 CMakeUserPresets.json
+out
