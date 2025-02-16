@@ -5,7 +5,7 @@
             "type": "cppdbg",
             "request": "launch",
             "name": "Debug",
-            "program": "${workspaceFolder}/out/build/default/app",
+            "program": "${workspaceFolder}/out/build/default/hello-vcpkg",
             "args": [],
             "cwd": "${workspaceFolder}",
             "externalConsole": false,
