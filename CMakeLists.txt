@@ -4,9 +4,13 @@ project(hello-vcpkg)
 
 find_package(fmt CONFIG REQUIRED)
 
+add_subdirectory(mylib)
+
 add_executable(hello-vcpkg src/main.cc)
 
-target_link_libraries(hello-vcpkg PRIVATE fmt::fmt)
+target_include_directories(hello-vcpkg PRIVATE mylib)
+
+target_link_libraries(hello-vcpkg PRIVATE fmt::fmt mylib)
 
 enable_testing()
-add_subdirectory(tests)
+add_subdirectory(${CMAKE_SOURCE_DIR}/tests)
