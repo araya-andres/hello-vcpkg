@@ -1,7 +1,10 @@
 
 find_package(GTest CONFIG REQUIRED)
 
-add_executable(mylib-tests tests.cc)
+add_executable(mylib-tests
+test_fibonacci.cc
+test_insertion_sort.cc
+)
 
 add_dependencies(mylib-tests mylib)
 
